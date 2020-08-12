@@ -7,9 +7,9 @@ struct Node
 }*first=NULL,*second=NULL,*third=NULL;
 
 
+//displaying the elements...
 void Display(struct Node *p)
 {
- //printf("The required merged list is as follows:\n");
  while(p!=NULL)
  {
  printf("\t%d ",p->data);
@@ -18,6 +18,7 @@ void Display(struct Node *p)
 }
 
 
+//creating the list
 void create(int A[],int n)
 {
  int i;
@@ -58,6 +59,7 @@ void create2(int A[],int n)
 }
 
 
+//Merging the two lists...
 void Merge(struct Node *p,struct Node *q)
 {
  struct Node *last;
